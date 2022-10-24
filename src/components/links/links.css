@@ -1,0 +1,14 @@
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a{
+    margin:0 auto;
+}
+
+button{
+    margin:10px;
+}

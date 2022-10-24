@@ -1,0 +1,131 @@
+:root
+{
+    /* Light theme Colors vars */
+    --blue: #0080ff;
+    --blue-2: #2f98ff;
+    --orange:#FF8C00;
+    --orange-2:#FFA500;
+    --purple:#9400D3;
+    --purple-2:#9966CC;
+    --pink:#FF1493;
+    --pink-2:#FF69B4;
+    --green:#006400;
+    --green-2:#008000;
+}
+
+/* Light Theme */
+
+.light-theme{
+    color:#000;
+    background:#f3f8f9;
+}
+
+.light-theme a{
+    color:#000;
+    text-decoration: none;
+}
+
+.light-theme a:visited{
+    color:#000;
+}
+
+/* Dark Theme */
+.dark-theme{
+    color:#fff;
+    background:#121420;
+}
+
+.dark-theme a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.dark-theme a:visible{
+    color:#fff;
+}
+
+/* Buttoms colors offers */
+
+.button-c-blue{
+    
+    border:none;
+    padding: 15px;
+    font-size: 1.2rem;
+    color:#fff;
+    background: var(--blue);
+    object-fit: contain;
+    border-radius: 2rem;
+
+}
+
+.button-c-blue:hover{
+    background: var(--blue-2);
+}
+
+.button-c-orange{
+    
+    border:none;
+    padding: 15px;
+    font-size: 1.2rem;
+    color:#fff;
+    background: var(--orange);
+    object-fit: contain;
+    border-radius: 2rem;
+
+}
+
+.button-c-orange:hover{
+    background: var(--orange-2);
+}
+
+.button-c-purple{
+    
+    border:none;
+    padding: 15px;
+    font-size: 1.2rem;
+    color:#fff;
+    background: var(--purple);
+    object-fit: contain;
+    border-radius: 2rem;
+
+}
+
+.button-c-purple:hover{
+    background: var(--purple-2);
+}
+
+.button-c-pink{
+    
+    border:none;
+    padding: 15px;
+    font-size: 1.2rem;
+    color:#fff;
+    background: var(--pink);
+    object-fit: contain;
+    border-radius: 2rem;
+
+}
+
+.button-c-pink:hover{
+    background: var(--pink-2);
+}
+
+.button-c-green{
+    
+    border:none;
+    padding: 15px;
+    font-size: 1.2rem;
+    color:#fff;
+    background: var(--green);
+    object-fit: contain;
+    border-radius: 2rem;
+
+}
+
+.button-c-green:hover{
+    background: var(--green-2);
+}
+
+h1{
+    text-align: center;
+}

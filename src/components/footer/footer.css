@@ -1,0 +1,10 @@
+.footer-links a{
+    font-size:0.9rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-links p{
+    text-align: center;
+    margin: 0.1rem;
+}
