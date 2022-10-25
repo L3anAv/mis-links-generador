@@ -3,13 +3,6 @@ import infoUser from './info/InfoUser.json'
 import Footer from "./components/footer/Footer"
 import Links from "./components/links/Links"
 
-/* 
-* Theme: dark || light.
-* Name of the onwer: string.
-* Require social media links in rutasLinks file.
-* Configure the automatic configuration of the repo for deploy in pages gihub or gitlab.
-*/
-
 function App() {
   
   const theme = new Map([
@@ -17,13 +10,11 @@ function App() {
     ['ligh', 'light-theme']
   ])
 
-  
-
   useEffect(() => {
+    // > Para el nombre
     window.document.title = `🔗 Los links de ${infoUser[0].Name}`
-   
 
-    // For control theme of the project
+    // Para el settear el theme
     window.document.body.classList = `${theme.get(infoUser[0].Theme)}`
     
   }, [])

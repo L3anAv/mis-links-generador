@@ -1,11 +1,9 @@
 import './links.css'
 import '/src/theme.css'
-import RutasLinks from '/src/info/RutasLinks.json'
-
-//import { FaInstagram } from 'react-icons/fa';
+import RutasLinks from '../../info/RutasLinks.json'
 
 function Links(colorBottom){
-  /* Bottom Colors: blue, orange, purple, green & pink. */
+ 
 
   const colores = new Map([
     ['blue', 'button-c-blue'],
@@ -18,7 +16,7 @@ function Links(colorBottom){
   return (
     <div>
       <h1>🔗 Mis redes 🔗</h1>
-      {RutasLinks.map(value => <a href={value.Ruta} target="_blank"><button className={colores.get(colorBottom.colorBottom)}>{value.Nombre}</button></a>)}
+      {RutasLinks.map(value => <a href={value.ruta} target="_blank"><button className={colores.get(colorBottom.colorBottom)}>{value.name}</button></a>)}
     </div>
   )
 }
