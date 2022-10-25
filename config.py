@@ -1,8 +1,8 @@
 #DEMO
-
 import os
 import json
 import pathlib
+import sys
 
 rutaActual = pathlib.Path().absolute()
 
@@ -10,13 +10,26 @@ rutaActual = pathlib.Path().absolute()
 nombre = input('Your Name: ')
 
 #Theme del proyecto
+themes = ['dark', 'light']
 print('\nThemes options:\n\x1b[38;5;9m 1) dark \033[0m \n\x1b[38;5;9m 2) light \033[0m', end='\n')
-theme = input("\nTheme: ")
+themeOpcion = int(input("\nIngresar numero de opcion: "))
 
-#Color para botones
-# blue, orange, purple, green & pink.
-print('\nColor for bottoms: \n\x1b[38;5;81m 0) blue \033[0m \n\x1b[38;5;214m 1) orange \033[0m \n\x1b[38;5;141m 2) purple \033[0m \n\033[0;32m 3) green \033[0m \n\x1b[38;5;199m 4) pink \033[0m', end='\n')
-botomColor = input("\nColor: ")
+
+if themeOpcion <= 2:
+    theme = themes[themeOpcion-1]
+else:
+    sys.exit('Opcion no valida.')
+
+#Color para botones ># blue, orange, purple, green & pink.
+colores = ['blue', 'orange', 'purple','green', 'pink']
+print('\nColor for bottoms: \n\x1b[38;5;81m 1) blue \033[0m \n\x1b[38;5;214m 2) orange \033[0m \n\x1b[38;5;141m 3) purple \033[0m \n\033[0;32m 4) green \033[0m \n\x1b[38;5;199m 5) pink \033[0m', end='\n')
+colorOption = int(input("\nIngresar numero de opcion: "))
+
+if colorOption <= 5:
+    botomColor = colores[colorOption-1]
+else:
+    sys.exit('Opcion no valida.')
+    
 
 #Seteo de json para theme e info de usuario
 dataInfoUser = {}
