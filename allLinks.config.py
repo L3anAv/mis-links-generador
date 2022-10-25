@@ -49,6 +49,7 @@ def deployApp():
         sys.exit('\n\x1b[38;5;9mOcurrio un error. No se han creado los archivos necesarios para crear el proyecto.\033[0m')
 
 #Nombre para la pagina
+os.system('npm install')
 print('\n --- TODOS TUS LINKS --- \n')
 nombre = input('Ingresa tu nombre: ')
 
