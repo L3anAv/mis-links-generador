@@ -43,13 +43,17 @@ def deployApp():
     #Comprobacion de cantidad de archivos y corro comandos
     if initial_count == 2:
         os.system('npm run build')
-        print(' >> Su proyecto se encuentra en: ' + str(rutaActual) + '/dist')
         os.system('npm run preview')
+        print('\n >> Su proyecto se encuentra en: ' + str(rutaActual) + '/dist')
+        print('\nGracias por usar!')
     else:
         sys.exit('\n\x1b[38;5;9mOcurrio un error. No se han creado los archivos necesarios para crear el proyecto.\033[0m')
 
-#Nombre para la pagina
+#Configuraciones previas
+os.remove(rutaParaArchivo + '/vacio.txt')
 os.system('npm install')
+
+#Nombre para la pagina
 print('\n --- TODOS TUS LINKS --- \n')
 nombre = input('Ingresa tu nombre: ')
 
@@ -100,4 +104,3 @@ crearJson(rutaParaArchivo, fileLinks, infoLinks)
 
 #Correr app si todo lo necesario esta
 deployApp()
-
