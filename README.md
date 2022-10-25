@@ -6,7 +6,7 @@ _La idea es automatizar la creación de este tipo de páginas para poder control
 
 
 
-### 🛑 Requerimentos Previos 
+## 🛑 Requerimentos Previos 
 
 Para que funcione este proyecto debemos tener instalado:
 
@@ -29,9 +29,9 @@ Luego vamos seleccionando entre las opciones dadas por terminal. Hasta la creaci
 
 ` 🚀🚀🚀 Al final de todo se nos dara la ruta donde se encuentra nuestro proyecto listo. 🚀🚀🚀`
 
+<hr>
 <br>
 <br>
-
 #  🗣 ¡Importante! 🗣
 📜 📜 📜
 ### `Actualmente el proyecto se encuentra en constante actualizacion 🛑. Mejoras se encontran disponibles en la brevedad.`
