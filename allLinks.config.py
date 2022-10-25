@@ -33,7 +33,7 @@ def crearJson(path, nameOfJson, dataForJson):
 
 #Corre los comandos para crear el proyecto
 
-def deployApp():
+def crearApp():
      #Cuento cantidad de archivos
     initial_count = 0
     for path in pathlib.Path(rutaParaArchivo).iterdir():
@@ -43,11 +43,14 @@ def deployApp():
     #Comprobacion de cantidad de archivos y corro comandos
     if initial_count == 2:
         os.system('npm run build')
-        os.system('npm run preview')
-        print('\n >> Su proyecto se encuentra en: ' + str(rutaActual) + '/dist')
-        print('\nGracias por usar!')
+        print('\n >> Su proyecto se creo exitosamente en: ' + str(rutaActual) + '/dist')
     else:
         sys.exit('\n\x1b[38;5;9mOcurrio un error. No se han creado los archivos necesarios para crear el proyecto.\033[0m')
+
+def mostarPreview(boolean):
+    if boolean:
+        os.system('npm run preview')
+
 
 #Configuraciones previas
 os.remove(rutaParaArchivo + '/vacio.txt')
@@ -103,4 +106,11 @@ fileLinks = "RutasLinks.json"
 crearJson(rutaParaArchivo, fileLinks, infoLinks)
 
 #Correr app si todo lo necesario esta
-deployApp()
+crearApp()
+
+valor = input('¿Quiere ver un preview del proyecto? [s/n]: ')
+
+if valor == 's':
+    mostarPreview()
+else:
+    sys.exit('¡¡ Gracias por usar !!')
