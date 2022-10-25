@@ -47,11 +47,6 @@ def crearApp():
     else:
         sys.exit('\n\x1b[38;5;9mOcurrio un error. No se han creado los archivos necesarios para crear el proyecto.\033[0m')
 
-def mostarPreview(boolean):
-    if boolean:
-        os.system('npm run preview')
-
-
 #Configuraciones previas
 os.remove(rutaParaArchivo + '/vacio.txt')
 os.system('npm install')
@@ -111,6 +106,6 @@ crearApp()
 valor = input('¿Quiere ver un preview del proyecto? [s/n]: ')
 
 if valor == 's':
-    mostarPreview()
+    os.system('npm run preview')
 else:
     sys.exit('¡¡ Gracias por usar !!')
