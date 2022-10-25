@@ -1,6 +1,3 @@
-
-<hr>
-
 # ⛓️ TODOS MIS LINKS ⛓️
 #### 💻 Un proyecto para crear páginas simil [linktr.ee](https://linktr.ee/ "linktree").
 
@@ -32,8 +29,6 @@ Luego vamos seleccionando entre las opciones dadas por terminal. Hasta la creaci
 ` 🚀🚀🚀 Al final de todo se nos dara la ruta donde se encuentra nuestro proyecto listo. 🚀🚀🚀`
 
 <hr>
-
-<br>
 
 #  🗣 ¡Importante! 🗣
 📜 📜 📜
