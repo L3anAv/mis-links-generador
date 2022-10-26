@@ -8,14 +8,21 @@ import sys
 #Variables/otros necesarios
 infoLinks = []
 continuar = True
+JsoninfoUser = {}
 themes = ['dark', 'light']
 repo  =  ['GitHub', 'GitLab']
 social = ['Instagram', 'Twitter', 'repo']
 colors = ['blue', 'orange', 'purple','green', 'pink']
+sugerenciaSocial = ['Instagram', 'Twitter', 'GitHub o GitLab']
+
+#Nombres de json
+fileLinks = "RutasLinks.json"
+fileInfoUser = "InfoUser.json"
 
 #Obtener la ruta actual
-#Setear la ruta para los archivos
 rutaActual = pathlib.Path().absolute()
+
+#Setear la ruta para los archivos
 rutaParaArchivo = str(rutaActual) + "/src/info"
 
 #Retorna el valor correspondiente seleccionado por el ususario
@@ -32,7 +39,6 @@ def crearJson(path, nameOfJson, dataForJson):
         json.dump(dataForJson, jsonSalida)
 
 #Corre los comandos para crear el proyecto
-
 def crearApp():
      #Cuento cantidad de archivos
     initial_count = 0
@@ -47,6 +53,59 @@ def crearApp():
     else:
         sys.exit('\n\x1b[38;5;9mOcurrio un error. No se han creado los archivos necesarios para crear el proyecto.\033[0m')
 
+#Funcion que muestra las redes predeterminadas que vienen pre cargadas
+def mostrarRedes():
+    print('\nLas redes pre-cargadas son: ')
+    for item in sugerenciaSocial:
+        print(item + '.')
+
+#Funcion que agrega una nueva red a mano para los botones
+def agregarRed():
+    agregarOtra = True
+    while(agregarOtra):
+        nombreDeRed = input('Ingresar el nombre de la red para agregar: ')
+        linkDeRed = input('Ingrese el Link a su perfil de la red: ')
+        infoLinks.append({'name': nombreDeRed, 'ruta': linkDeRed})
+        agregarMas = input('¿Quiere agregar otra red? [s/n]')
+        if agregarMas == 'n':
+            agregarOtra = False
+
+#Funcion que pregunta al usuario si quiere agregar otra red a la lista de redes.
+def agregarMasRedes():
+    agregaMas = input('¿Quiere agregar otra red? [s/n]')
+    if agregaMas == 's':
+        agregarRed()
+
+def verPreview():
+    valor = input('¿Quiere ver un preview del proyecto? [s/n]: ')
+    if valor == 's':
+        os.system('npm run preview')
+    else:
+        sys.exit('¡¡ Gracias por usar !!')
+
+def completarBotonPredeterminados():
+    while(continuar):
+        dataLinks = {}
+        for item in social:
+            if item != 'repo':
+                user = input('Ingresa tu @ para ' + item + ' (sin el @): ')
+                link = 'https://www.' + item + '.com/' + user
+                infoLinks.append({'name': item, 'ruta': link})
+            else:
+                print('Reposity GitHub or GitLab?\n')
+                print('Options: \n\x1b[38;5;0m 1) Github \033[0m \n\x1b[38;5;214m 2) GitLab \033[0m')
+                repoOption = int(input('\nIngrese el numero de opcion elegida: '))
+                repository = controlarValorIngresado(repoOption, len(repo), repo)
+                user = input('Ingresa tu @ para ' + repository + ' (sin el @): ')
+
+                if repository == 'GitHub':
+                    link = 'https://www.' + repository + '.com/' + user
+                else:
+                    link = 'https://www.' + repository + '.io/' + user
+                infoLinks.append({'name': repository,'ruta': link})
+
+        continuar = False
+
 #Configuraciones previas
 os.remove(rutaParaArchivo + '/vacio.txt')
 os.system('npm install')
@@ -60,52 +119,28 @@ print('\nThemes options:\n\x1b[38;5;9m 1) Oscuro \033[0m \n\x1b[38;5;9m 2) Claro
 themeOpcion = int(input("\nIngrese el numero de opcion elegida: "))
 theme = controlarValorIngresado(themeOpcion, len(themes), themes)
 
-
 #Elegrir color de botones
 print('\nColors for bottoms: \n\x1b[38;5;81m 1) Azul \033[0m \n\x1b[38;5;214m 2) Naranja \033[0m \n\x1b[38;5;141m 3) Violeta \033[0m \n\033[0;32m 4) Verde \033[0m \n\x1b[38;5;199m 5) Rosa \033[0m', end='\n')
 colorOption = int(input("\nIngrese el numero de opcion elegida: "))
 botomColor = controlarValorIngresado(colorOption, len(colors), colors)
 
 #Creacion de json: InfoUser
-Jsoninfo = {}
 dataInfoUser = [{"Name": nombre, "Theme": theme, "ColorBottoms": botomColor}]
-Jsoninfo = dataInfoUser
-fileInfoUser = "InfoUser.json"
-crearJson(rutaParaArchivo, fileInfoUser, Jsoninfo)
+JsoninfoUser  = dataInfoUser
+crearJson(rutaParaArchivo, fileInfoUser, JsoninfoUser)
 
-#Peticion de usuarios/otros para links de botones    
-while(continuar):
-    dataLinks = {}
-    for item in social:
-        if item != 'repo':
-            user = input('Ingresa tu @ para ' + item + ' (sin el @): ')
-            link = 'https://www.' + item + '.com/' + user
-            infoLinks.append({'name': item, 'ruta': link})
-        else:
-            print('Reposity GitHub or GitLab?\n')
-            print('Options: \n\x1b[38;5;0m 1) Github \033[0m \n\x1b[38;5;214m 2) GitLab \033[0m')
-            repoOption = int(input('\nIngrese el numero de opcion elegida: '))
-            repository = controlarValorIngresado(repoOption, len(repo), repo)
-            user = input('Ingresa tu @ para ' + repository + ' (sin el @): ')
+#Muestra las redes ofrecidas
+mostrarRedes()
 
-            if repository == 'GitHub':
-                link = 'https://www.' + repository + '.com/' + user
-            else:
-                link = 'https://www.' + repository + '.io/' + user
-            infoLinks.append({'name': repository,'ruta': link})
+#Pregunta por agregar mas redes (Manualmente)
+agregarMasRedes()
 
-    continuar = False
+#Peticion de usuarios/otros para links de botones de las redes predeterminadas.
+completarBotonPredeterminados()
 
 #Creacion de json: RutasLinks
-fileLinks = "RutasLinks.json"
 crearJson(rutaParaArchivo, fileLinks, infoLinks)
 
-#Correr app si todo lo necesario esta
+#Crear y correr app si se quiere.
 crearApp()
-
-valor = input('¿Quiere ver un preview del proyecto? [s/n]: ')
-
-if valor == 's':
-    os.system('npm run preview')
-else:
-    sys.exit('¡¡ Gracias por usar !!')
+verPreview()
