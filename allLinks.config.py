@@ -7,7 +7,6 @@ import sys
 
 #Variables/otros necesarios
 infoLinks = []
-continuar = True
 JsoninfoUser = {}
 themes = ['dark', 'light']
 repo  =  ['GitHub', 'GitLab']
@@ -84,8 +83,8 @@ def verPreview():
         sys.exit('¡¡ Gracias por usar !!')
 
 def completarBotonPredeterminados():
+    continuar = True
     while(continuar):
-        dataLinks = {}
         for item in social:
             if item != 'repo':
                 user = input('Ingresa tu @ para ' + item + ' (sin el @): ')
