@@ -1,5 +1,4 @@
 #imports
-from ctypes.wintypes import PINT
 import os
 import json
 import pathlib
@@ -27,7 +26,7 @@ rutaParaArchivo = str(rutaActual) + "/src/info"
 #Retorna el valor correspondiente seleccionado por el ususario
 def controlarValorIngresado(userIngressInt, maxValue, array):
     if userIngressInt <= maxValue:
-        value = array[themeOpcion-1]
+        value = array[userIngressInt-1]
         return value
     else:
         sys.exit('\n\x1b[38;5;9mSe ingreso un opcion no valida.\033[0m')
@@ -46,17 +45,21 @@ def crearApp():
             initial_count += 1
 
     #Comprobacion de cantidad de archivos y corro comandos
-    if initial_count == 2:
+    if initial_count >= 2:
         os.system('npm run build')
         print('\n >> Su proyecto se creo exitosamente en: ' + str(rutaActual) + '/dist')
+        print('¡¡ Gracias por usar !! <3\n')
     else:
         sys.exit('\n\x1b[38;5;9mOcurrio un error. No se han creado los archivos necesarios para crear el proyecto.\033[0m')
 
+
 #Funcion que muestra las redes predeterminadas que vienen pre cargadas
 def mostrarRedes():
-    print('\nLas redes pre-cargadas son: ')
+    print('\n============================')
+    print('\nLas redes pre-cargadas son: \n')
     for item in sugerenciaSocial:
         print(item + '.')
+    print('\n============================')
 
 #Funcion que agrega una nueva red a mano para los botones
 def agregarRed():
@@ -71,7 +74,7 @@ def agregarRed():
 
 #Funcion que pregunta al usuario si quiere agregar otra red a la lista de redes.
 def agregarMasRedes():
-    agregaMas = input('¿Quiere agregar otra red? [s/n]')
+    agregaMas = input('\n¿Quiere agregar otra red? [s/n]: ')
     if agregaMas == 's':
         agregarRed()
 
@@ -79,8 +82,6 @@ def verPreview():
     valor = input('¿Quiere ver un preview del proyecto? [s/n]: ')
     if valor == 's':
         os.system('npm run preview')
-    else:
-        sys.exit('¡¡ Gracias por usar !!')
 
 def completarBotonPredeterminados():
     continuar = True
@@ -105,8 +106,11 @@ def completarBotonPredeterminados():
 
         continuar = False
 
-#Configuraciones previas
-os.remove(rutaParaArchivo + '/vacio.txt')
+#Configuraciones previas a crear proyecto
+rutaArchivoVacio = str(rutaParaArchivo) + '/vacio.txt'
+if os.path.exists(rutaArchivoVacio):
+    os.remove(rutaArchivoVacio)
+
 os.system('npm install')
 
 #Nombre para la pagina
