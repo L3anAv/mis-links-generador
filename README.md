@@ -26,7 +26,7 @@ Teninendo el proyecto descargado, nos dirigimos a la ruta donde hayamos descarga
 
 Luego vamos seleccionando entre las opciones dadas por terminal. Luego del ingreso de links, comienza la creacion de nuestra proyecto en un nuevo directorio.
 
-#### `🚀 Al final de todo se nos dara la ruta en nuestra pc de donde se encuentra nuestro proyecto listo 🚀`
+##### `🚀 Al final de todo se nos dara la ruta en nuestra pc donde se encuentra nuestro proyecto listo 🚀`
 
 <hr>
 
