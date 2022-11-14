@@ -32,6 +32,5 @@ Luego vamos seleccionando entre las opciones dadas por terminal. Luego del ingre
 
 #  🗣 ¡Importante! 🗣
 📜 📜 📜
-### `Actualmente el proyecto se encuentra en constante actualizacion 🛑. 
-#### Mejoras se encontran disponibles a la brevedad.`
+#### `Actualmente el proyecto se encuentra en constante actualizacion 🛑. Mejoras se encontran disponibles a la brevedad.`
 
