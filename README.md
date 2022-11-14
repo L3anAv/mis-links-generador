@@ -28,6 +28,8 @@ Luego vamos seleccionando entre las opciones dadas por terminal. Luego del ingre
 
 ##### `🚀 Al final de todo se nos dara la ruta en nuestra pc donde se encuentra nuestro proyecto listo 🚀`
 
+<br>
+
 #  🗣 ¡Importante! 🗣
 ##### ` 🛑 Actualmente el proyecto se encuentra en constante actualizacion. Mejoras se encontraran disponibles a la brevedad. 🛑`
 
