@@ -18,19 +18,20 @@ Para que funcione este proyecto debemos tener instalado:
 
 Teninendo el proyecto descargado, nos dirigimos a la ruta donde hayamos descargado el proyecto.  
 
-Abrimos una terminal en la ubicacion e ingresamos en la terminal: 
+- Abrimos una terminal en la ubicacion e ingresamos en la terminal: 
 
 ```bash
   python allLinks.config.py
 ```
 
-Luego vamos seleccionando entre las opciones dadas por terminal. Hasta la creacion de la carpeta donde se encuentra ya listo nuestro página simil linktree.
+Luego vamos seleccionando entre las opciones dadas por terminal. Luego del ingreso de links, comienza la creacion de nuestra proyecto en un nuevo directorio.
 
-` 🚀🚀🚀 Al final de todo se nos dara la ruta donde se encuentra nuestro proyecto listo. 🚀🚀🚀`
+#### `🚀 Al final de todo se nos dara la ruta en nuestra pc de donde se encuentra nuestro proyecto listo 🚀`
 
 <hr>
 
 #  🗣 ¡Importante! 🗣
 📜 📜 📜
-### `Actualmente el proyecto se encuentra en constante actualizacion 🛑. Mejoras se encontran disponibles en la brevedad.`
+### `Actualmente el proyecto se encuentra en constante actualizacion 🛑. 
+#### Mejoras se encontran disponibles a la brevedad.`
 
