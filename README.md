@@ -1,7 +1,9 @@
 # 🔗 Mis links ![](https://img.shields.io/badge/version-%C3%BAltima-succes) ![](https://img.shields.io/badge/actualizaciones-en%20proceso-orange) 
 
 
-`💻 Proyecto para automatizar la creación de páginas simil [linktr.ee](https://linktr.ee/ "linktree").`
+`
+💻 Proyecto para automatizar la creación de páginas simil linktr.ee.
+`
 
 ![](https://badgen.net/badge/icon/npm?icon=npm&label) ![](https://badgen.net/badge/icon/terminal?icon=terminal&label) 
 
