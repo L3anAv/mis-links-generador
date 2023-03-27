@@ -1,4 +1,4 @@
-# 🔗 Mis links ![](https://img.shields.io/badge/version-%C3%BAltima-succes) ![](https://img.shields.io/badge/actualizaciones-en%20proceso-orange) ![](https://badgen.net/badge/icon/npm?icon=npm&label) ![](https://badgen.net/badge/icon/terminal?icon=terminal&label) 
+# Mis links ![](https://img.shields.io/badge/version-%C3%BAltima-succes) ![](https://img.shields.io/badge/actualizaciones-en%20proceso-orange) ![](https://badgen.net/badge/icon/npm?icon=npm&label) ![](https://badgen.net/badge/icon/terminal?icon=terminal&label) 
 
 💻 Proyecto para automatizar la creación de páginas simil linktr.ee.
 
