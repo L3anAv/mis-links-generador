@@ -5,8 +5,6 @@
 💻 Proyecto para automatizar la creación de páginas simil linktr.ee.
 `
 
-<br>
-
 ### 📦 Requerimentos
 
 Este proyecto requiere tener instalado:
