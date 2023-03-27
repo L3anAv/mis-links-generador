@@ -1,35 +1,44 @@
-# ⛓️ TODOS MIS LINKS ⛓️
-#### 💻 Un proyecto para crear páginas simil [linktr.ee](https://linktr.ee/ "linktree").
-
-_La idea es automatizar la creación de este tipo de páginas para poder controlar nuestro tráfico sin darselo a terceros._
+# 🔗 Mis links ![](https://img.shields.io/badge/version-%C3%BAltima-succes) ![](https://img.shields.io/badge/actualizaciones-en%20proceso-orange) 
 
 
+`💻 Proyecto para automatizar la creación de páginas simil [linktr.ee](https://linktr.ee/ "linktree").`
 
-## 🛑 Requerimentos Previos 
-
-Para que funcione este proyecto debemos tener instalado:
-
-- [Node.js](https://nodejs.org/)
-- [Python](https://www.python.org/downloads/)
-
-`🛑 Si no los tenemos instalados podemos ir a las paginas oficiales, y realizar la descarga antes de seguir con la guia de uso. 🛑`
-
-## ✍🏻 Guia de uso 
-
-Teninendo el proyecto descargado, nos dirigimos a la ruta donde hayamos descargado el proyecto.  
-
-- Abrimos una terminal en la ubicacion e ingresamos en la terminal: 
-
-```bash
-  python allLinks.config.py
-```
-
-Luego vamos seleccionando entre las opciones dadas por terminal. Luego del ingreso de links, comienza la creacion de nuestra proyecto en un nuevo directorio.
-
-##### `🚀 Al final de todo se nos dara la ruta en nuestra pc donde se encuentra nuestro proyecto listo 🚀`
+![](https://badgen.net/badge/icon/npm?icon=npm&label) ![](https://badgen.net/badge/icon/terminal?icon=terminal&label) 
 
 <br>
 
-#  🗣 ¡Importante! 🗣
-##### ` 🛑 Actualmente el proyecto se encuentra en constante actualizacion. Mejoras se encontraran disponibles a la brevedad. 🛑`
+### 📦 Requerimentos
 
+Este proyecto requiere tener instalado:
+
+`- Python ✔`
+`- Node.js ✔`
+
+> Es recomendable cualquier version de node superior o igual a la version 6 y de python cualquier superior o igual a 3.7
+
+<br>
+
+### 📃  Como usar
+
+
+* Clonar el repositorio con:
+
+~~~
+  git clone https://github.com/L3anAv/mis-links-generador.git
+~~~
+
+`👀 Verificar la ruta donde vayamosa a clonar el repositorio 👀.`
+
+* Nos dirigimos a la ruta del directorio en donde descargamos el proyecto, abrimos una terminal e ingresamos:
+
+~~~
+ python allLinks.config.py
+~~~
+
+* Seleccionamos las opciones ofrecidas siguiendo las instrucciones.
+
+* Al finalizar se nos indicará la ruta donde se encuentra nuestro proyecto listo para ser subido.
+
+`Existe la opción de ver un preview de `
+
+<br>
