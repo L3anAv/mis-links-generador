@@ -39,6 +39,6 @@ Este proyecto requiere tener instalado:
 
 * Al finalizar se nos indicará la ruta donde se encuentra nuestro proyecto listo para ser subido.
 
-`Existe la opción de ver un preview de `
+`Existe la opción de ver un preview.`
 
 <br>
