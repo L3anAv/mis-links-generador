@@ -17,7 +17,7 @@ Este proyecto requiere tener instalado:
 
 ### 📃  Como usar
 
-* Clonar el repositorio con:
+Clonar el repositorio con:
 
 ~~~
   git clone https://github.com/L3anAv/mis-links-generador.git
@@ -25,15 +25,15 @@ Este proyecto requiere tener instalado:
 
 `👀 Verificar la ruta donde vayamosa a clonar el repositorio 👀.`
 
-* Nos dirigimos a la ruta del directorio en donde descargamos el proyecto, abrimos una terminal e ingresamos:
+Nos dirigimos a la ruta del directorio en donde descargamos el proyecto, abrimos una terminal e ingresamos:
 
 ~~~
  python allLinks.config.py
 ~~~
 
-* Seleccionamos las opciones ofrecidas siguiendo las instrucciones.
+Seleccionamos las opciones ofrecidas siguiendo las instrucciones.
 
-* Al finalizar se nos indicará la ruta donde se encuentra nuestro proyecto listo para ser subido.
+Al finalizar se nos indicará la ruta donde se encuentra nuestro proyecto listo para ser subido.
 
 `Existe la opción de ver un preview.`
 
