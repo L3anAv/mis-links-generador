@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     // > Para el nombre
     window.document.title = `🔗 Los links de ${infoUser[0].Name}`
-
+    
     // Para el settear el theme
     window.document.body.classList = `${theme.get(infoUser[0].Theme)}`
     

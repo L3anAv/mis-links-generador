@@ -3,7 +3,6 @@ import '/src/theme.css'
 import RutasLinks from '../../info/RutasLinks.json'
 
 function Links(colorBottom){
- 
 
   const colores = new Map([
     ['blue', 'button-c-blue'],
@@ -16,7 +15,7 @@ function Links(colorBottom){
   return (
     <div>
       <h1>🔗 Mis redes 🔗</h1>
-      {RutasLinks.map(value => <a href={value.ruta} target="_blank"><button className={colores.get(colorBottom.colorBottom)}>{value.name}</button></a>)}
+      {RutasLinks.map(value => <a href={value.ruta} target="_blank"><button className={colores.get(colorBottom.colorBottom)}>{value.nombre}</button></a>)}
     </div>
   )
 }
