@@ -1,6 +1,6 @@
-FROM alpine:3.15
+FROM ubuntu:latest
 
-RUN apk add --no-cache nodejs npm python3 py3-pip
+RUN apt-get update && apt-get install -y python3-pip nodejs npm
 
 COPY . /
 
