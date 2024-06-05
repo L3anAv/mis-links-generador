@@ -1,5 +1,5 @@
 # Stage 1: Install dependencies
-FROM python:3.12-alpine3.16 AS builder
+FROM python:3.12-alpine3.19 AS builder
 
 RUN apk add --no-cache nodejs npm
 
