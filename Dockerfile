@@ -12,6 +12,8 @@ WORKDIR /app
 
 COPY --from=builder . .
 
+COPY . .
+
 RUN apk add --no-cache nodejs npm
 
 RUN npm install
