@@ -1,8 +1,6 @@
 # Stage 1: Install dependencies
 FROM python:3.12-alpine3.19 AS builder
 
-RUN apk add --no-cache nodejs npm
-
 COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
@@ -13,6 +11,8 @@ FROM alpine:latest
 WORKDIR /app
 
 COPY --from=builder . .
+
+RUN apk add --no-cache nodejs npm
 
 RUN npm install
 
