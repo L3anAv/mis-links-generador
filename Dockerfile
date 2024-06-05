@@ -4,10 +4,8 @@ RUN apk add --no-cache nodejs npm python3 py3-pip
 
 COPY . /
 
-RUN npm install -g
+RUN npm install
 
-RUN python3 -m pip install -r requirements.txt
-
-EXPOSE 5000
+RUN pip install -r requirements.txt
 
 CMD ["python", "/allLinks.service.py"]
