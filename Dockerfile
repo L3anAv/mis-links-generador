@@ -12,7 +12,7 @@ FROM alpine:latest
 
 WORKDIR /app
 
-COPY --from=builder /app/ .
+COPY --from=builder . .
 
 RUN npm install
 
