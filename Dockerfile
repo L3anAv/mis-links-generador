@@ -1,11 +1,19 @@
-FROM ubuntu:latest
+# Stage 1: Install dependencies
+FROM python:3.12-alpine3.16 AS builder
 
-RUN apt-get update && apt-get install -y python3 python3-pip nodejs npm
+RUN apk add --no-cache nodejs npm
 
-COPY . /
-
-RUN npm install
+COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "/allLinks.service.py"]
+# Stage 2: Copy application and reduce image size
+FROM alpine:latest
+
+WORKDIR /app
+
+COPY --from=builder /app/ .
+
+RUN npm install
+
+CMD ["python3", "/allLinks.service.py"]
