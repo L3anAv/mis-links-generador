@@ -3,6 +3,8 @@ FROM python:3.12-alpine3.19 AS builder
 
 COPY requirements.txt ./
 
+RUN pip install --upgrade pip
+
 RUN pip install gunicorn
 
 RUN pip install -r requirements.txt
