@@ -1,7 +1,7 @@
 # Stage 1: Install dependencies
 FROM python:3.12-alpine3.19 AS builder
 
-COPY requirements.txt ./
+COPY . .
 
 RUN pip install gunicorn
 
