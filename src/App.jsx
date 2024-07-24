@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import infoUser from './info/InfoUser.json'
+import infoUser from "../src/info/InfoUser.json"
 import Footer from "./components/footer/Footer"
 import Links from "./components/links/Links"
 
