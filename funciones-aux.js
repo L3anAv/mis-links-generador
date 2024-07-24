@@ -5,7 +5,7 @@ import child_process from 'child_process';
 
 export async function crearApp(){
 
-    const comando = 'npm run build';
+    const comando = 'pnpm run build';
   
     try {
   
