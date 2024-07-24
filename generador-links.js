@@ -24,13 +24,10 @@ app.use(cors({
   methods: ['GET', 'POST'], 
   allowedHeaders: ['Content-Type', 'Authorization'], 
   exposedHeaders: ['Content-Range'],
+  credentials :  true,
 }));
 
 app.post('/', async (req, res) => {
-
-    // Header for response
-    res.setHeader('Access-Control-Allow-Origin', 'https://generador-links.vercel.app/');
-    res.setHeader('Access-Control-Allow-Methods', 'POST');
 
     // Data
     const data = req.body
