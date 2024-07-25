@@ -46,13 +46,17 @@ app.post('/', async (req, res) => {
       "ColorBottoms": ColorBotones,
     }]
     
-    const targetDir = './src/info'
-    const fileNameInfo = 'infoUser.json'; 
+    // Nombre de json
+    const fileNameInfo = 'infoUser.json'
     const fileNameRedes = 'RutasLinks.json'
 
+    //Ruta donde crealos
+    const targetDir = 'src/info'
+    const parhDirJson = path.join(pathActual, targetDir)
+
     // Creando json
-    crearJson(targetDir, fileNameInfo, datos_usuario)
-    crearJson(targetDir, fileNameRedes, arrayRedes)
+    crearJson(parhDirJson, fileNameInfo, datos_usuario)
+    crearJson(parhDirJson, fileNameRedes, arrayRedes)
 
     // Buildeando app
     await crearApp();
