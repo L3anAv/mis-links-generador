@@ -32,9 +32,9 @@ async function crearZip() {
   
 }
   
-export function crearJson(targetDir, fileName, datos){
+export function crearJson(parhDirJson, fileName, datos){
     
-    const filePath = path.join(targetDir, fileName); 
+    const filePath = path.join(parhDirJson, fileName); 
   
     try {
       const jsonData = JSON.stringify(datos, null, 2); 

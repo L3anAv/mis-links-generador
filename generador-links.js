@@ -51,7 +51,7 @@ app.post('/', async (req, res) => {
     const fileNameRedes = 'RutasLinks.json'
 
     //Ruta donde crealos
-    const targetDir = 'src/info'
+    const targetDir = './src/info'
     const parhDirJson = path.join(pathActual, targetDir)
 
     // Creando json
