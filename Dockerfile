@@ -13,4 +13,4 @@ COPY . .
 EXPOSE 5000:3000
 
 # Comando para iniciar tu aplicación
-CMD ["node", "app.js"]
+CMD ["node", "generador-links.js"]

@@ -71,7 +71,7 @@ app.get('/descargar', (_, res) => {
   
   try {
 
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+    res.setHeader('Access-Control-Allow-Origin', 'https://generador-links.vercel.app');
     res.setHeader('Access-Control-Allow-Methods', 'GET');
     res.setHeader('Content-Type', 'application/zip');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
