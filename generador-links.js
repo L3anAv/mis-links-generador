@@ -5,10 +5,9 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import {crearApp, crearJson } from './funciones-aux.js';
 
-
 const app = express();
-const nombreArchivo = 'dist.zip'
 const pathActual = process.cwd()
+const nombreArchivo = 'dist.zip'
 const rutaArchivo = path.join(pathActual, nombreArchivo)
 
 app.get('/', (_, res) => {
@@ -16,7 +15,6 @@ app.get('/', (_, res) => {
 });
 
 app.use(bodyParser.json());
-
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors({
@@ -51,7 +49,7 @@ app.post('/', async (req, res) => {
     const fileNameRedes = 'RutasLinks.json'
 
     //Ruta donde crealos
-    const targetDir = './src/info'
+    const targetDir = '/src/info'
     const parhDirJson = path.join(pathActual, targetDir)
 
     // Creando json
@@ -73,7 +71,7 @@ app.get('/descargar', (_, res) => {
   
   try {
 
-    res.setHeader('Access-Control-Allow-Origin', 'https://generador-links.vercel.app/');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
     res.setHeader('Access-Control-Allow-Methods', 'GET');
     res.setHeader('Content-Type', 'application/zip');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');

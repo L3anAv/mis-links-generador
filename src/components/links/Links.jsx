@@ -1,6 +1,6 @@
 import './links.css'
 import '/src/theme.css'
-import RutasLinks from '/opt/render/project/src/src/info/'
+import RutasLinks from '../../info/RutasLinks.json'
 
 function Links(colorBottom){
 

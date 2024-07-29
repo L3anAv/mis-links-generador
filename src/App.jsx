@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import infoUser from "/opt/render/project/src/src/info/infoUser.json"
-import Footer from "./components/footer/Footer"
+import infoUser from "./info/infoUser.json"
 import Links from "./components/links/Links"
+import Footer from "./components/footer/Footer"
 
 function App() {
   

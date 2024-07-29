@@ -30,6 +30,7 @@ async function crearZip() {
    zip.addLocalFolder('./dist')
    zip.writeZip('dist.zip')
   
+   return 'dist.zip'
 }
   
 export function crearJson(parhDirJson, fileName, datos){
