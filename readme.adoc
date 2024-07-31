@@ -1,0 +1,87 @@
+== Generador Links
+'''
+[comment]
+Author <leanav.dev@gmail.com>, {docdate}.
+
+
+App para automatizar la creación de una página simple de links, estilo linktr.ee.
+
+== Uso
+&#13;
+
+[square]
+- Paso 1:
+
+Complete el formulario con los datos solicitados y cargue los datos, vea la vista previa.
+
+[square]
+- Paso 2:
+
+Al probar los enlaces en la vista previa, tiene dos opciones, volver hacia atras y modificar los campos, colores. etc o dar en descargar obteniendo un .zip con los archivos dentro de su web estilo linktr.ee.
+
+[square]
+- Paso 3:
+
+Puede subir a su hosting de confianza los archivos descargados o a un respositorio de github para desplegar en github pages, si así lo desea.
+
+_* Los archivos descargados no se guardan en el servidor._
+
+
+
+== Stack
+&#13;
+
+==== Frontend
+&#13;
+
+image::https://skillicons.dev/icons?i=react,vite,styledcomponents[]
+
+> Desplegado en vercel.com.
+
+==== Backend
+&#13;
+
+image:https://skillicons.dev/icons?i=nodejs,express,docker,[]
+
+> Desplegado en render.com.
+
+
+
+== Librerias
+&#13;
+
+==== Frontend
+&#13;
+
+[square]
+-  https://www.npmjs.com/package/file-saver[File Saver]: Permite guardar archivos en el navegador del cliente. 
+
+- https://www.npmjs.com/package/react-hook-form[React Hook Form]: Proporciona un conjunto de hooks personalizados para manejar formularios en React de forma eficiente. 
+
+- https://www.npmjs.com/package/react-select[react-select]: Un componente de selección altamente personalizable para React.
+
+- https://www.npmjs.com/package/styled-components[Styled Components]: Permite escribir estilos CSS directamente en tus componentes de JavaScript. 
+
+- https://www.npmjs.com/package/wouter[Wouter]: Una biblioteca de enrutamiento sencilla y flexible para React. 
+
+- https://www.npmjs.com/package/zustand[Zustand]: Un mini gestor de estado para proyectos React.
+
+
+==== Backend
+&#13;
+
+[square]
+- https://www.npmjs.com/package/adm-zip[Adm Zip]: Biblioteca para manipular archivos ZIP en Node.js. Permite crear, leer y modificar archivos ZIP.
+
+- https://www.npmjs.com/package/body-parser[Body Parser]: Middleware para Express que analiza el cuerpo de las solicitudes HTTP entrantes. 
+Es esencial para procesar datos enviados desde formularios HTML.
+
+- https://www.npmjs.com/package/cors[Cors]: Middleware para Express que permite habilitar CORS (Cross-Origin Resource Sharing), lo que es necesario para que aplicaciones de diferentes orígenes se comuniquen entre sí.
+
+- https://www.npmjs.com/package/express[Express]: Framework minimalista y flexible para crear aplicaciones web en Node.js. Es la base de muchas aplicaciones web modernas.
+
+- https://www.npmjs.com/package/fs[fs]: Módulo de Node.js que proporciona una interfaz para interactuar con el sistema de archivos. Permite leer, escribir y eliminar archivos y directorios.
+
+- https://www.npmjs.com/package/path[Path]: Módulo de Node.js que proporciona utilidades para trabajar con rutas de archivos y directorios. Es útil para construir rutas de forma dinámica.
+
+
