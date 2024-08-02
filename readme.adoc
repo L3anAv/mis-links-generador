@@ -1,73 +1,68 @@
-== Generador Links
-'''
+= API REST Generador Links 
+
 [comment]
 Author <leanav.dev@gmail.com>, {docdate}.
 
+API REST para la creacion del build y entrega de archivos de la app https://github.com/l3anav/generador-links[Generador-Links].
 
-App para automatizar la creación de una página simple de links, estilo linktr.ee.
 
-== Uso
+== Refencia de uso de API REST
 &#13;
 
-[square]
-- Paso 1:
+=== Enviar datos para creacion de Links App
 
-Complete el formulario con los datos solicitados y cargue los datos, vea la vista previa.
+[source]
+----
+POST /
+----
 
-[square]
-- Paso 2:
+Desde esta ruta al hacerle un POST se comienza, con los datos recibidos, a crear el build de la app de links.
 
-Al probar los enlaces en la vista previa, tiene dos opciones, volver hacia atras y modificar los campos, colores. etc o dar en descargar obteniendo un .zip con los archivos dentro de su web estilo linktr.ee.
+[cols="1,1,1,1"]
+|===
+| Parametro | Tipo | Descripción | Estructura
 
-[square]
-- Paso 3:
+| Nombre
+| `string`
+| Nombre del usuario
+| ~ ~ ~
 
-Puede subir a su hosting de confianza los archivos descargados o a un respositorio de github para desplegar en github pages, si así lo desea.
+| ColorTheme
+| `object`
+| Objeto que contiene valores para obtener el color para el theme de la app.
+| {"label": valor, "value": valor}
 
-_* Los archivos descargados no se guardan en el servidor._
+| ColorBotones
+| `object`
+| Objeto que contiene valores para obtener el color para los botones de la app.
+| {"label": valor, "value": valor}
 
+| redes
+| `array`
+| Array que contiene objetos con las redes agregadas para mostrar en la app de links.
+| [{"nombre": valor, "ruta": valor}]
 
+|===
+
+=== Descargar los archivos de la App de Links
+
+[source]
+----
+GET /descargar
+----
+
+Desde esta ruta se sirve para descargar un archivo .zip que contiene todos los archivos para desplegar la app de links hecha con el generador.
 
 == Stack
 &#13;
 
-==== Frontend
-&#13;
+image:https://skillicons.dev/icons?i=react,vite,nodejs,express,docker,[]
 
-image::https://skillicons.dev/icons?i=react,vite,styledcomponents[]
-
-> Desplegado en vercel.com.
-
-==== Backend
-&#13;
-
-image:https://skillicons.dev/icons?i=nodejs,express,docker,[]
-
-> Desplegado en render.com.
+> Desplegado en render.com, atravez de un dockerfile.
 
 
 
 == Librerias
-&#13;
-
-==== Frontend
-&#13;
-
-[square]
--  https://www.npmjs.com/package/file-saver[File Saver]: Permite guardar archivos en el navegador del cliente. 
-
-- https://www.npmjs.com/package/react-hook-form[React Hook Form]: Proporciona un conjunto de hooks personalizados para manejar formularios en React de forma eficiente. 
-
-- https://www.npmjs.com/package/react-select[react-select]: Un componente de selección altamente personalizable para React.
-
-- https://www.npmjs.com/package/styled-components[Styled Components]: Permite escribir estilos CSS directamente en tus componentes de JavaScript. 
-
-- https://www.npmjs.com/package/wouter[Wouter]: Una biblioteca de enrutamiento sencilla y flexible para React. 
-
-- https://www.npmjs.com/package/zustand[Zustand]: Un mini gestor de estado para proyectos React.
-
-
-==== Backend
 &#13;
 
 [square]
