@@ -3,8 +3,17 @@
 [comment]
 Author <leanav.dev@gmail.com>, {docdate}.
 
-API REST para la creacion del build y entrega de archivos de la app https://github.com/l3anav/generador-links[Generador-Links].
+API REST para la creacion del build y entrega de archivos de la app https://github.com/l3anav/generador-links[Generador Links].
 
+== Breve resumen del proyecto.
+
+El proyecto empezó siendo un CLI para la terminal en el cual se elegia atravez de ella opciones, luego de terminar de elegir se buildeaba localmente la app de links.
+
+Ahora luego de repensar la idea, se puede usar una web app que utiliza el backend de la rama main desplegado en render.com atravez de un dockerfile. 
+
+La app se puede usar desde https://generador-links.vercel.app[Generador Links].
+
+El CLI se puede descargar desde la https://github.com/L3anAv/mis-links-generador/tree/con-terminal[rama con Terminal].
 
 == Refencia de uso de API REST
 &#13;
