@@ -65,7 +65,7 @@ Desde esta ruta se sirve para descargar un archivo .zip que contiene todos los a
 == Stack
 &#13;
 
-image:https://skillicons.dev/icons?i=react,vite,nodejs,express,docker,[]
+image:https://skillicons.dev/icons?i=react,vite,nodejs,express,docker,pnpm,powershell[]
 
 > Desplegado en render.com, atravez de un dockerfile.
 
